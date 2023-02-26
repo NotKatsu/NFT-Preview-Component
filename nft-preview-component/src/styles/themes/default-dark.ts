@@ -1,6 +1,6 @@
 import { createTheme } from "@nextui-org/react";
 
-const darkDefaultTheme = createTheme({
+const darkTheme = createTheme({
     type: "dark",
     theme: {
         fonts: {
@@ -9,8 +9,10 @@ const darkDefaultTheme = createTheme({
         colors: {
             white: "#1B1B1A",
             black: "#0D1A2D",
+
+            primary: "#FFFFFF"
         },
     },
 });
 
-export default darkDefaultTheme;
+export default darkTheme;

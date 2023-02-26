@@ -1,4 +1,4 @@
-import { Image, Grid, Spacer, Text, Card, Row, Divider } from '@nextui-org/react'
+import { Image, Grid, Spacer, Text, Card, Row, Divider, User } from '@nextui-org/react'
 import { SiEthereum } from 'react-icons/si'
 import { AiFillClockCircle } from 'react-icons/ai'
 
@@ -23,7 +23,11 @@ export default function Home() {
           <Spacer y={1} />
           <Divider  css={{ width: "85%", "marginLeft": "auto", "marginRight": "auto" }} />
           <Spacer y={1} />
-          <Image  width={40} src={"https://cdn.discordapp.com/attachments/1074339253246496779/1079167047612764280/image-avatar.png"} css={{  }} />
+          <Row>
+            <User src="https://cdn.discordapp.com/attachments/1074339253246496779/1079167047612764280/image-avatar.png" name="" bordered color="primary" size="md" css={{ marginLeft: "20px", "marginRight": "0" }} />
+            <Text css={{ fontSize: "18px", color: "#7186A2" }}>Creation of</Text>
+            <Text css={{ fontSize: "18px", color: "#FFFFFF", "marginLeft": "4px" }}>Jules Wyvern</Text>
+          </Row>
           <Spacer y={1.5} />
         </Card>
       </div>
