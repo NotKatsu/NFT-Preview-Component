@@ -61,7 +61,8 @@ export default function Home() {
             size="md" 
             altText="User Profile Picture"
             css={{ marginLeft: "20px", "marginRight": "0", "& .nextui-user-name": {
-              color: "#7186A2"
+              color: "#7186A2",
+               
             } }} />
 
             <Text 
