@@ -2,6 +2,10 @@ import { Image, Grid, Spacer, Text, Card, Row, Divider, User } from '@nextui-org
 import { SiEthereum } from 'react-icons/si'
 import { AiFillClockCircle } from 'react-icons/ai'
 
+const name = () => {
+  return <Text>Hello WORLD</Text>
+}
+
 export default function Home() {
   return (
     <>
@@ -14,12 +18,13 @@ export default function Home() {
           <Image 
           width={300} 
           src="https://cdn.discordapp.com/attachments/1074339253246496779/1079159125528817715/image-equilibrium.jpg" 
+          alt="Image of NFT"
           css={{ br: "8px" }} />
 
           <Spacer y={0.65} />
 
           <Text 
-          css={{ fontSize: "23px", "marginLeft": "26px" }}
+          css={{ fontSize: "23px", "marginLeft": "26px", fontWeight: "700" }}
           >Equailibrium #3429</Text>
 
           <Spacer y={0.2} />
@@ -34,10 +39,10 @@ export default function Home() {
           <Row>
             <Text 
             css={{ fontSize: "18px", "marginLeft": "26px", color: "#26FFFF" }}
-            ><SiEthereum size={16}/>  0.041 ETH</Text>
+            ><SiEthereum size={16} style={{ alignItems: "center" }}/>  0.041 ETH</Text>
             <Text 
             css={{ fontSize: "18px", "marginLeft": "30%", color: "#7186A2"}}
-            ><AiFillClockCircle size={16}/>  3 days left</Text>
+            ><AiFillClockCircle size={16} style={{ alignItems: "center" }}/>  3 days left</Text>
           </Row>
 
           <Spacer y={1} />
@@ -50,17 +55,17 @@ export default function Home() {
           <Row>
             <User 
             src="https://cdn.discordapp.com/attachments/1074339253246496779/1079167047612764280/image-avatar.png" 
-            name="" 
+            name="Creation of"
             bordered 
             color="primary" 
             size="md" 
-            css={{ marginLeft: "20px", "marginRight": "0" }} />
+            altText="User Profile Picture"
+            css={{ marginLeft: "20px", "marginRight": "0", "& .nextui-user-name": {
+              color: "#7186A2"
+            } }} />
 
             <Text 
-            css={{ fontSize: "18px", color: "#7186A2" }}
-            >Creation of</Text>
-            <Text 
-            css={{ fontSize: "18px", color: "#FFFFFF", "marginLeft": "4px" }}
+            css={{ fontSize: "14px", color: "#FFFFFF", marginTop: "0.40rem"}}
             >Jules Wyvern</Text>
 
           </Row>
